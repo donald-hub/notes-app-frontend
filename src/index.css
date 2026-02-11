@@ -1,0 +1,30 @@
+
+/* index.css */
+
+:root {
+  --bg: #0f172a;
+  --surface: #111827;
+  --surface-2: #1f2933;
+  --border: #1f2937;
+
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --primary: #6366f1;
+  --danger: #ef4444;
+
+  --radius: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+

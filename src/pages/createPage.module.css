@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.backIcon{
+    width: 16px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.backTitle{
+    font-size: 1.5em;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleInput{
+    min-width: 300px;
+    flex: 1;
+    font-size: 1.5em;
+    padding: 8px;
+    border: none;
+    border: 1px solid #333;
+    outline: none;
+    background-color: yellow;
+}   
+.contentInput{
+    min-width: 300px;
+    height: calc(100vh - 350px);
+    font-size: 1.5em;
+    padding: 8px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: none;
+}
+.submitButton{
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}

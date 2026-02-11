@@ -1,0 +1,25 @@
+.addNote{
+    display:flex;
+    flex-flow: row-reverse;
+    margin-right: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.addButton {
+    text-decoration: none;
+    background: var(--primary);
+    font-size: 2em;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.addButton:hover {
+    opacity: 0.9;
+}

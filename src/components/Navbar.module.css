@@ -1,0 +1,64 @@
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  box-sizing: border-box;
+  min-height: 56px;
+} */
+
+/* LOGO */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* RIGHT SIDE */
+/* .actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+} */
+
+/* .actions a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.actions a:hover {
+  text-decoration: underline; 
+} */
+/* 
+.actions button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+} */
+
+.navbar {
+  background: var(--surface-2);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  color: var(--danger);
+}
