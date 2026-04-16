@@ -1,4 +1,4 @@
-const BASE_URL = "https://notes-app-rr2n.onrender.com/";
+const BASE_URL = "https://notes-app-rr2n.onrender.com";
 
 export const registerUser = async (userData) => {
   const res = await fetch(`${BASE_URL}/auth/register`, {
