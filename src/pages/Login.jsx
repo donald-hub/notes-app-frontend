@@ -16,7 +16,7 @@ const Login = () => {
 
     try {
       const data = await loginUser({ email, password });
-
+      console.log("testing");
       // STEP 3 (partial): store token
       setToken(data.token);
 
