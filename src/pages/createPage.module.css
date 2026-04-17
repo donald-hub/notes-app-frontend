@@ -29,7 +29,8 @@
     background: transparent;
     border-radius: 10px;
     border: 2px solid cornsilk;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
 }   
 .contentInput{
     min-width: 300px;
@@ -42,6 +43,7 @@
     background: transparent;
     border-radius: 10px;
     border: 2px solid cornsilk;
+     color: white;
 }
 .submitButton{
     margin-top: 16px;
