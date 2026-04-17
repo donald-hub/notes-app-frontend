@@ -1,6 +1,6 @@
 import { getToken } from "../lib/auth";
 
-const BASE_URL = "http://localhost:5001/api";
+const BASE_URL = "https://notes-app-rr2n.onrender.com/api";
 
 const authHeaders = () => {
   const token = getToken();
