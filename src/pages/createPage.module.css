@@ -25,18 +25,18 @@
     font-size: 1.5em;
     padding: 8px;
     border: none;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     outline: none;
-    background-color: yellow;
+    /* background-color: yellow; */
 }   
 .contentInput{
     min-width: 300px;
     height: calc(100vh - 350px);
     font-size: 1.5em;
     padding: 8px;
-    border-left: 1px solid #333;
+    /* border-left: 1px solid #333;
     border-right: 1px solid #333;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #333; */
     outline: none;
     resize: none;
 }
