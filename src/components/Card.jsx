@@ -6,7 +6,7 @@ function Card({id, title, content, createdAt, onDelete}) {
     return (
         <div className={styles.card}>
             <div className={styles.heading}>
-                <h2>{title}</h2>
+                <h2 className="bg-gray-300">{title}</h2>
             </div>
             <div className={styles.content}>
                 <p>{content}</p>
