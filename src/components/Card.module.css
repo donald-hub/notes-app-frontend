@@ -1,12 +1,12 @@
 .card{
     background: var(--surface);
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: inherit;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: inherit; */
     overflow: auto;
     transition: transform 0.15s ease, border-color 0.15s ease;
     cursor: pointer;
