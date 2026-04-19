@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function Card({id, title, content, createdAt, onDelete}) {
     return (
         <div className="flex flex-col justify-between gap-4 bg-sky-100 w-screen md:w-auto">
-            <div className="rounded-xl">
+            <div className="capitalize">
                 <h2 className="bg-gray-300">{title}</h2>
             </div>
             <div className={styles.content}>
