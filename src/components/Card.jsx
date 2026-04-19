@@ -4,8 +4,8 @@ import { PenSquareIcon, TrashIcon } from "lucide-react";
 import {Link} from 'react-router-dom';
 function Card({id, title, content, createdAt, onDelete}) {
     return (
-        <div className="flex flex-col justify-between bg-sky-100">
-            <div className="capitalize">
+        <div className="flex flex-col bg-sky-100">
+            <div className="styles.heading">
                 <h2 className="bg-gray-300">{title}</h2>
             </div>
             <div className={styles.content}>
