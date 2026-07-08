@@ -11,7 +11,7 @@ const Reset = () =>{
     return (
         <>
         <h2>OTP Verification</h2>
-        <div>Your generated OTP is {generateOTP}</div>
+        <div>Your generated OTP is {generateOTP()}</div>
         <div>Verify</div>
         <div>Enter New Password</div>
         <div>Re-enter new Password</div>
