@@ -1,6 +1,6 @@
+import crypto from "crypto";
 const Reset = () =>{
 
-    const crypto = require('crypto');
 
     function generateOTP() {
     // Generates a random integer between 100000 (inclusive) and 999999 (inclusive)
