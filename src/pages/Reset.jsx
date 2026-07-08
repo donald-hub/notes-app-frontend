@@ -16,9 +16,7 @@ function sendMail(to,sub,msg){
         to:to,
         subject:sub,
         html:msg
-    }
-    console.log("mail sent successfully");
-)
+    })
 }
 
 sendMail("donaldmahanta65@gmail.com","OTP Verification", "this is a mail sent through nodemailer which will be further used to send otp for notesapp");
