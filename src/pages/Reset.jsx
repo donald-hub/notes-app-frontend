@@ -2,12 +2,11 @@ import crypto from "crypto";
 const Reset = () =>{
 
 
-    // function generateOTP() {
-    // // Generates a random integer between 100000 (inclusive) and 999999 (inclusive)
-    // return crypto.randomInt(100000, 1000000).toString();
-    // }
+    function generateOTP() {
+    return crypto.randomInt(100000, 1000000).toString();
+    }
 
-    // console.log("Your generated OTP is: ", generateOTP());
+    console.log("Your generated OTP is: ", generateOTP());
 
     return (
         <>
