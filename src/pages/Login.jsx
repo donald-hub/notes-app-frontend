@@ -50,6 +50,7 @@ const Login = () => {
 
       <button className={styles.submitButton} type="submit">Login</button>
     </form>
+    <div className={styles.resetLink}><Link to="/reset"><span>Forgot Password?</span></Link></div>
     <div className={styles.registerLink}>Don’t have an account?<Link to="/register"><span>Register</span></Link></div>
     </div>
     </div>
