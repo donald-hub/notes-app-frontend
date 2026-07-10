@@ -1,13 +1,14 @@
 import crypto from "crypto";
+import { mail } from "../services/auth";
 const Reset = () =>{
 
 
-    function generateOTP() {
-    return crypto.randomInt(100000, 1000000).toString();
-    }
+    // function generateOTP() {
+    // return crypto.randomInt(100000, 1000000).toString();
+    // }
 
-    console.log("Your generated OTP is: ", generateOTP());
-
+    const data = await mail();
+    console.log(data);
     return (
         <>
         <h2>OTP Verification</h2>
