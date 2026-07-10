@@ -7,7 +7,7 @@ const Reset = () =>{
     // return crypto.randomInt(100000, 1000000).toString();
     // }
 
-    const data = await mail();
+    const data = mail();
     console.log(data);
     return (
         <>
