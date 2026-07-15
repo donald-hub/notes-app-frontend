@@ -1,8 +1,9 @@
 import crypto from "crypto";
-import { mail } from "../services/auth";
+// import { mail } from "../services/auth";
+import Mail from "../components/mail";
 const Reset = () =>{
 
-
+    <Mail/>
     // function generateOTP() {
     // return crypto.randomInt(100000, 1000000).toString();
     // }
