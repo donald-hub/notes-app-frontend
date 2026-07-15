@@ -1,4 +1,3 @@
-import crypto from "crypto";
 // import { mail } from "../services/auth";
 import Mail from "../components/mail";
 const Reset = () =>{
