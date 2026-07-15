@@ -29,17 +29,17 @@ export const loginUser = async (credentials) => {
   return res.json();
 };
 
-// export const mail = async () => {
-//   const res = await fetch(`${BASE_URL}/auth/reset`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//   });
+export const mail = async () => {
+  const res = await fetch(`${BASE_URL}/auth/reset`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 
-//   if(!res.ok){const err = await res.json();
-//     throw new Error(err.message || "Mail Not Sent");
-//   }
+  if(!res.ok){const err = await res.json();
+    throw new Error(err.message || "Mail Not Sent");
+  }
 
-//   return res.json();
-// }
+  return res.json();
+}
