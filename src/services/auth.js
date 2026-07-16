@@ -31,7 +31,7 @@ export const loginUser = async (credentials) => {
 
 
 export const forgotPassword = async (email) => {
-  const response = await fetch(`${BASE_URL}/forgot-password`, {
+  const response = await fetch(`${BASE_URL}/auth/forgot-password`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export const forgotPassword = async (email) => {
 };
 
 export const verifyOtp = async (email, otp) => {
-  const response = await fetch(`${BASE_URL}/verify-otp`, {
+  const response = await fetch(`${BASE_URL}/auth/verify-otp`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -70,7 +70,7 @@ export const verifyOtp = async (email, otp) => {
 };
 
 export const resetPassword = async (email, password) => {
-  const response = await fetch(`${BASE_URL}/reset-password`, {
+  const response = await fetch(`${BASE_URL}/auth/reset-password`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
