@@ -1,24 +1,30 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
-const [loading, setLoading] = useState(false);
-const [error, setError] = useState("");
+import { Link, useNavigate } from "react-router-dom";
+import { forgotPassword } from "../services/auth";
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        await forgotPassword(email);
+      setLoading(true);
+      setError("");
 
-        navigate("/verify-otp", {
-            state: { email }
-        });
+      await forgotPassword(email);
+
+      navigate("/verify-otp", {
+        state: { email },
+      });
 
     } catch (err) {
-        setError(err.message);
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
 };
 
@@ -53,9 +59,9 @@ const ForgotPassword = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-200"
-          >
-            Send OTP
+            disabled={loading}
+            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 transition">
+            {loading ? "Sending..." : "Send OTP"}
           </button>
         </form>
 
