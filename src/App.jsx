@@ -5,6 +5,9 @@ import CreatePage from "./pages/createPage.jsx";
 import EditNote from "./pages/EditNote.jsx";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword.jsx";
+import VerifyOtp from "./pages/VerifyOtp.jsx";
+import ResetPassword from "./pages/ResetPassword.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 
