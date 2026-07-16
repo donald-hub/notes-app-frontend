@@ -5,7 +5,6 @@ import CreatePage from "./pages/createPage.jsx";
 import EditNote from "./pages/EditNote.jsx";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Reset from "./pages/Reset";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 
