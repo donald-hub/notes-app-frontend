@@ -30,8 +30,6 @@ export const loginUser = async (credentials) => {
 };
 
 
-const BASE_URL = "http://localhost:5001/api/auth";
-
 export const forgotPassword = async (email) => {
   const response = await fetch(`${BASE_URL}/forgot-password`, {
     method: "POST",
@@ -70,8 +68,6 @@ export const verifyOtp = async (email, otp) => {
 
   return data;
 };
-
-const BASE_URL = "http://localhost:5001/api/auth";
 
 export const forgotPassword = async (email) => {
   const response = await fetch(`${BASE_URL}/forgot-password`, {
