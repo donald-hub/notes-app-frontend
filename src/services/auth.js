@@ -29,17 +29,106 @@ export const loginUser = async (credentials) => {
   return res.json();
 };
 
-export const mail = async () => {
-  const res = await fetch(`${BASE_URL}/auth/reset`, {
+
+const BASE_URL = "http://localhost:5001/api/auth";
+
+export const forgotPassword = async (email) => {
+  const response = await fetch(`${BASE_URL}/forgot-password`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
+    body: JSON.stringify({ email }),
   });
 
-  if(!res.ok){const err = await res.json();
-    throw new Error(err.message || "Mail Not Sent");
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Failed to send OTP");
   }
 
-  return res.json();
-}
+  return data;
+};
+
+export const verifyOtp = async (email, otp) => {
+  const response = await fetch(`${BASE_URL}/verify-otp`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email,
+      otp,
+    }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Invalid OTP");
+  }
+
+  return data;
+};
+
+const BASE_URL = "http://localhost:5001/api/auth";
+
+export const forgotPassword = async (email) => {
+  const response = await fetch(`${BASE_URL}/forgot-password`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Failed to send OTP");
+  }
+
+  return data;
+};
+
+export const verifyOtp = async (email, otp) => {
+  const response = await fetch(`${BASE_URL}/verify-otp`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email,
+      otp,
+    }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Invalid OTP");
+  }
+
+  return data;
+};
+
+export const resetPassword = async (email, password) => {
+  const response = await fetch(`${BASE_URL}/reset-password`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email,
+      password,
+    }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Password reset failed");
+  }
+
+  return data;
+};
