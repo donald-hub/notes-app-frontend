@@ -31,9 +31,9 @@ const ForgotPassword = () => {
   return (
     <div className={styles.authPage}>
       <div className={styles.container}>
-        <h2 className={styles.header}>
+        <h1 className={styles.header}>
           Forgot Password
-        </h2>
+        </h1>
 
         <p className={styles.authSub}>
           Enter your registered email address.
