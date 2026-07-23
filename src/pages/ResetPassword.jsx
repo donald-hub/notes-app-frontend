@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { resetPassword } from "../services/auth";
+import styles from "./ResetPassword.module.css";
 
 const ResetPassword = () => {
   const navigate = useNavigate();
@@ -41,20 +42,19 @@ const ResetPassword = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center px-4">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+    <div className={styles.authPage}>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1>Reset Password</h1>
+      </div>
 
-        <h1 className="text-3xl font-bold text-center">
-          Reset Password
-        </h1>
-
-        <p className="text-gray-500 text-center mt-2">
+        <p className={styles.authSub}>
           Create a new password for your account.
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="mt-8 space-y-5"
+          className={styles.loginForm}
         >
           <div>
             <label className="block text-sm font-medium mb-2">
@@ -99,7 +99,7 @@ const ResetPassword = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition disabled:bg-gray-400"
+            className={styles.submitButton}
           >
             {loading
               ? "Updating..."
