@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate, useLocation  } from "react-router-dom";
 import { verifyOtp } from "../services/auth";
-import { useNavigate, useLocation } from "react-router-dom";
 
 
 

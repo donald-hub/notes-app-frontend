@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { resetPassword } from "../services/auth";
 
 const ResetPassword = () => {
   const navigate = useNavigate();
