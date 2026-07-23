@@ -33,7 +33,7 @@ const ResetPassword = () => {
         await resetPassword(email, password);
         navigate("/login");
     } catch (error) {
-        etError(error.message);
+        setError(error.message);
     } finally {
         setLoading(false);
     }
