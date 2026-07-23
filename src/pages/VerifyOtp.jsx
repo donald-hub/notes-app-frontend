@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Link,useNavigate, useLocation  } from "react-router-dom";
 import { verifyOtp } from "../services/auth";
-
+import styles from "./VerifyOtp.module.css";
 
 
 
@@ -67,20 +67,20 @@ const VerifyOtp = () => {
 };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="w-full max-w-md bg-white shadow-lg rounded-xl p-8">
+    <div className={styles.authPage}>
+      <div className={styles.container}>
 
-        <h1 className="text-3xl font-bold text-center">
+        <h1 className={styles.header}>
           Verify OTP
         </h1>
 
-        <p className="text-center text-gray-500 mt-2">
+        <p className={styles.authSub}>
           Enter the 6-digit code sent to your email.
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="mt-8"
+          className={styles.loginForm}
         >
           <div className="flex justify-between gap-2">
 
@@ -112,7 +112,7 @@ const VerifyOtp = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full mt-8 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 transition"
+            className={styles.submitButton}
             >
             {loading ? "Verifying..." : "Verify OTP"}
             </button>
