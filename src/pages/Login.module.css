@@ -14,7 +14,8 @@
     border-radius: var(--radius);
     padding: 32px;
 }
-.loginContainer h2 {
+.header {
+  font-size: 1.5rem;
   color: var(--text);
   margin-bottom: 6px;
 }
