@@ -49,7 +49,7 @@ const createPage = () => {
     </div>
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className="flex flex-col">
-      <label htmlFor="title">Title</label>
+      <label htmlFor="title" className="text-black">Title</label>
       <input
         className={styles.titleInput}
         type="text"
@@ -59,7 +59,7 @@ const createPage = () => {
       />
       </div>
       <div className="flex flex-col">
-      <label htmlFor="content">Description</label>
+      <label htmlFor="content" className="text-black">Description</label>
       <textarea
         className={styles.contentInput}
         name="content"
