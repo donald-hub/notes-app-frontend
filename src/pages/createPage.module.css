@@ -41,6 +41,7 @@
 }   
 .contentInput{
     width: 100%;
+    margin: 0;
     font-size: 1.5em;
     padding: 8px;
     border: none;
