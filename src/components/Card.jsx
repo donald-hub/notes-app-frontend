@@ -11,7 +11,7 @@ function Card({id, title, content, createdAt, onDelete}) {
             <div className={styles.content}>
                 <p>{content}</p>
             </div>
-            <div className={styles.footer} className="bg-gray-300">
+            <div className={`${styles.footer} bg-gray-300`}>
             <span className={styles.date}>{formatDate(createdAt)}</span>
             <span className={styles.actions}>
                 <Link to={`/update/${id}`}><PenSquareIcon className={styles.edit}/></Link>
