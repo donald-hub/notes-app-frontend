@@ -48,6 +48,7 @@ const createPage = () => {
       <span className={styles.backTitle}>Back to Notes</span>
     </div>
     <form className={styles.form} onSubmit={handleSubmit}>
+      <div className="flex flex-col">
       <label htmlFor="title">Title</label>
       <input
         className={styles.titleInput}
@@ -56,6 +57,8 @@ const createPage = () => {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
       />
+      </div>
+      <div className="flex flex-col">
       <label htmlFor="content">Description</label>
       <textarea
         className={styles.contentInput}
@@ -63,6 +66,7 @@ const createPage = () => {
         onChange={(e) => setContent(e.target.value)}
         placeholder="Content"
       />
+      </div>
       <button className={styles.submitButton} type="submit">Save</button>
     </form>
     </div>
