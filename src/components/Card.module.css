@@ -36,7 +36,7 @@
     overflow-y: auto;
     border-radius: 0 0 8px 8px;
     text-transform: capitalize;
-    background: var(--bg);
+    background: var(--surface);
 }
 /* .note-title {
   color: var(--text);
