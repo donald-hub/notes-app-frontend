@@ -48,7 +48,7 @@ const createPage = () => {
       <span className={styles.backTitle}>Back to Notes</span>
     </div>
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label htmlFor="title"></label>
+      <label htmlFor="title">Title</label>
       <input
         className={styles.titleInput}
         type="text"
@@ -56,7 +56,7 @@ const createPage = () => {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
       />
-      <label htmlFor="content"></label>
+      <label htmlFor="content">Description</label>
       <textarea
         className={styles.contentInput}
         name="content"
