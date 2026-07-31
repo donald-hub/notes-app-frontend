@@ -8,7 +8,7 @@ function Card({id, title, content, createdAt, onDelete}) {
             <div className={styles.heading}>
                 <h2 className="bg-gray-300">{title}</h2>
             </div>
-            <div className={styles.content}>
+            <div className={`${styles.content} bg-gray-300`}>
                 <p>{content}</p>
             </div>
             <div className={`${styles.footer} bg-gray-300`}>
