@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import { useState, useEffect } from 'react';
 import AddNew from '../components/AddNew';
 import { getNotes, deleteNote } from "../services/notes";
-import { IoIosAdd } from "react-icons/io";
 
 const HomePage = () => {
   const [notes, setNotes] = useState([]);
@@ -65,8 +64,7 @@ const HomePage = () => {
 </Cards>
 
 
-    {/* <AddNew/> */}
-    <IoIosAdd />
+    <AddNew/>
     </>
   )
 }
