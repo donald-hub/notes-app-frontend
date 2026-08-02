@@ -4,7 +4,7 @@ import {IoIosAdd} from 'react-icons/io';
 
 function AddNew() {
     return <div className={styles.addNote}>
-        <IoIosAdd />
+        <IoIosAdd size="5" />
         </div>
 }
 export default AddNew
