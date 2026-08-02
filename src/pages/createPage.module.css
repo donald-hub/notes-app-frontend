@@ -31,7 +31,7 @@
     box-sizing: border-box;
     width: auto;
     flex: 1;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 8px;
     outline: none;
     background: transparent;
@@ -44,7 +44,7 @@
     margin: 0;
     height: 20dvh;
     width:auto;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 8px;
     border: none;
     outline: none;
