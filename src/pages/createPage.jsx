@@ -53,7 +53,7 @@ const createPage = () => {
       <input
         className={styles.titleInput}
         type="text"
-        name="title"
+        id="title"
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Title"
       />
@@ -62,7 +62,7 @@ const createPage = () => {
       <label htmlFor="content" className="text-black">Description</label>
       <textarea
         className={styles.contentInput}
-        name="content"
+        id="content"
         onChange={(e) => setContent(e.target.value)}
         placeholder="Content"
         rows="5"
