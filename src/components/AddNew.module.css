@@ -9,9 +9,9 @@
 
 .addButton {
     text-decoration: none;
-    font-size: 2em;
     border: none;
     cursor: pointer;
+    box-shadow: inset;
 }
 
 .addButton:hover {
