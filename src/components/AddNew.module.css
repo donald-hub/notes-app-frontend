@@ -11,7 +11,8 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
-    box-shadow: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px #28282870;
 }
 
 .addButton:hover {
