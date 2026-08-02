@@ -26,6 +26,7 @@
     flex-direction: column;
     background-color: white;
     padding: 20px;
+    margin: 0;
 }
 .titleInput{
     box-sizing: border-box;
