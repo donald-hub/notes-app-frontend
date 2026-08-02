@@ -30,7 +30,7 @@
 }
 .titleInput{
     box-sizing: border-box;
-    width: 80dvw;
+    width: auto;
     flex: 1;
     font-size: 1.5em;
     padding: 8px;
@@ -42,7 +42,7 @@
 }
 .contentInput{
     box-sizing: border-box;
-    width: 80dvw;
+    width:auto;
     font-size: 1.5em;
     padding: 8px;
     border: none;
