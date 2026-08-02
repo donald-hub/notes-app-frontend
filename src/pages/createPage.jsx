@@ -45,7 +45,7 @@ const createPage = () => {
     <div className={styles.authPage}>
     <div className={styles.header}>
       <Link to="/" ><ArrowLeftIcon className={styles.backIcon}/></Link>
-      <span className={styles.backTitle}>Back to Notes</span>
+      <span className={styles.backTitle}>Go to Notes</span>
     </div>
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className="flex flex-col">
