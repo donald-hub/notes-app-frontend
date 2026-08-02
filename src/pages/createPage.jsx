@@ -65,7 +65,6 @@ const createPage = () => {
         id="content"
         onChange={(e) => setContent(e.target.value)}
         placeholder="Content"
-        rows="5"
       />
       </div>
       <button className={styles.submitButton} type="submit">Save</button>
