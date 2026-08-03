@@ -40,13 +40,11 @@
     color: #555;
 }
 .delete{
-    color: crimson;
-    border: none;
+    border: 1px solid red;
     border-radius: 4px;
     cursor: pointer;
     padding: 2px;
-    width: 20px;
-    height: 20px;
+    color: crimson;
 }
 .content{
     flex: 1;
