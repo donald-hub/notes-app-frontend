@@ -47,8 +47,8 @@ const EditNote = () => {
         <Navbar />
         <div className={styles.authPage}>
         <div className={styles.header}>
-          <Link to="/" ><ArrowLeftIcon className={styles.backIcon}/></Link>
-          <span className={styles.backTitle}>Back to Notes</span>
+          <Link to="/" className="flex"><ArrowLeftIcon className={styles.backIcon}/>
+          <span className={styles.backTitle}>Back to Notes</span></Link>
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
