@@ -50,7 +50,7 @@ const EditNote = () => {
           <Link to="/" className="flex"><ArrowLeftIcon className={styles.backIcon}/>
           <span className={styles.backTitle}>Back to Notes</span></Link>
         </div>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={`${styles.form} bg-gray-300`} onSubmit={handleSubmit}>
           <label htmlFor="title" className="text-black font-xl">Title</label>
           <input
             className={styles.titleInput}
