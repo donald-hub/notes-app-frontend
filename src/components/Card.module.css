@@ -58,7 +58,6 @@
     text-transform: capitalize;
     color: black;
     max-height: 100px;
-    overflow: hidden;
 }
 /* .note-title {
   color: var(--text);

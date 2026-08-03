@@ -45,6 +45,7 @@ const EditNote = () => {
     <div>
 
         <Navbar />
+        <div className={styles.authPage}>
         <div className={styles.header}>
           <Link to="/" ><ArrowLeftIcon className={styles.backIcon}/></Link>
           <span className={styles.backTitle}>Back to Notes</span>
@@ -67,6 +68,7 @@ const EditNote = () => {
           />
           <button className={styles.submitButton} type="submit">Save</button>
         </form>
+    </div>
     </div>
   )
 }
