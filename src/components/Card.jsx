@@ -1,13 +1,13 @@
 import styles from './Card.module.css';
 import { formatDate } from '../lib/utils';
-import { PenSquareIcon, TrashIcon } from "lucide-react";
+import { PenSquareIcon, TrashIcon, Pencil } from "lucide-react";
 import {Link} from 'react-router-dom';
 function Card({id, title, content, createdAt, onDelete}) {
     return (
         <div className={`${styles.card} bg-gray-300`}>
             <div className={styles.heading}>
                 <h2 className="bg-gray-300">{title}</h2><span className={styles.actions}>
-                <Link to={`/update/${id}`}><PenSquareIcon className={styles.edit}/></Link>
+                <Link to={`/update/${id}`}><Pencil className={styles.edit}/></Link>
                 <TrashIcon className={styles.delete} onClick={() => onDelete(id)}/>
             </span>
             </div>
