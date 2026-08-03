@@ -34,17 +34,17 @@
     font-weight: bold;
 }
 .edit{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 4px;
     cursor: pointer;
-    padding: 2px;
+    padding: 5px;
     color: #555;
 }
 .delete{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 4px;
     cursor: pointer;
-    padding: 2px;
+    padding: 5px;
     color: crimson;
 }
 .content{
