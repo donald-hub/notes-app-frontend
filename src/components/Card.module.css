@@ -20,6 +20,7 @@
 }
 .heading{
     display: flex;
+    padding-right: 10px;
     font-size: 1.2em;
     margin: 0 0 8px 0;
     color: black;
