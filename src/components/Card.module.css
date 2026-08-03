@@ -55,7 +55,7 @@
 
 
 .edit{
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
     padding: 2px;
