@@ -38,6 +38,7 @@
     border-radius: 4px;
     cursor: pointer;
     color: black;
+    padding-top: 2px;
     align-items: center;
 }
 .delete{
@@ -45,6 +46,7 @@
     border-radius: 4px;
     cursor: pointer;
     color: crimson;
+    padding-top: 2px;
     align-items: center;
 }
 .content{
