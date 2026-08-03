@@ -57,6 +57,7 @@
     border-radius: 0 0 8px 8px;
     text-transform: capitalize;
     color: black;
+    max-height: 100px;
 }
 /* .note-title {
   color: var(--text);
