@@ -51,19 +51,21 @@ const EditNote = () => {
           <span className={styles.backTitle}>Back to Notes</span></Link>
         </div>
         <form className={styles.form} onSubmit={handleSubmit}>
+          <label htmlFor="title" className="text-black font-xl">Title</label>
           <input
             className={styles.titleInput}
             type="text"
             value={title}
             placeholder="Title"
-            name="title"
+            id="title"
             onChange={(e) => setTitle(e.target.value)}
           />
+          <label htmlFor="content" className="text-black font-xl">Desription</label>
           <textarea
             className={styles.contentInput}
             value={content}
             placeholder="Content"
-            name="content"
+            id="content"
             onChange={(e) => setContent(e.target.value)}
           />
           <button className={styles.submitButton} type="submit">Save</button>
