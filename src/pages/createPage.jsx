@@ -42,7 +42,7 @@ const createPage = () => {
   return (
     <>
     <Navbar />
-    <div className={styles.authPage}>
+    <div className={`${styles.authPage} bg-gray-300`}>
     <div className={styles.header}>
       <Link className="flex" to="/" ><ArrowLeftIcon className={styles.backIcon}/>
       <span className={styles.backTitle}>Go to Notes</span></Link>
