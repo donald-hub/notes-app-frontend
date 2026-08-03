@@ -19,6 +19,7 @@
   transform: translateY(-4px);
 }
 .heading{
+    display: flex;
     font-size: 1.2em;
     margin: 0 0 8px 0;
     color: black;
@@ -26,6 +27,7 @@
     text-transform: capitalize;
 }
 .heading h2{
+    flex: 5;
     margin: 0;
     padding: 8px;
     font-weight: bold;
