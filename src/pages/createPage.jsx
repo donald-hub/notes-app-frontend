@@ -44,7 +44,7 @@ const createPage = () => {
     <Navbar />
     <div className={styles.authPage}>
     <div className={styles.header}>
-      <Link to="/" ><ArrowLeftIcon className={styles.backIcon}/>
+      <Link className="flex" to="/" ><ArrowLeftIcon className={styles.backIcon}/>
       <span className={styles.backTitle}>Go to Notes</span></Link>
     </div>
     <form className={styles.form} onSubmit={handleSubmit}>
